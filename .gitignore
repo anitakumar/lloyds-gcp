@@ -1,0 +1,4 @@
+llyods-key.json
+main/terraform.tfstate
+main/terraform.tfstate.backup
+main/.terraform
