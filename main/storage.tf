@@ -1,4 +1,4 @@
 resource "google_storage_bucket" "this" {
-  name = "llyods-buck-ak"
-  location = "EU"
+  name     = "${var.name}-bucket-test"
+  location = var.region
 }
