@@ -7,10 +7,10 @@ terraform {
   }
 }
 provider "google" {
-  project     = "lloyds-386918"
-  region      = "eu-west-1"
-  zone        = "eu-west1-a"
-  credentials = "lloyds-key.json"
+  project = "lloyds-386918"
+  region  = "eu-west-1"
+  zone    = "eu-west1-a"
+
 }
 
 
