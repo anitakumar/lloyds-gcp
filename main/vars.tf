@@ -1,5 +1,13 @@
+variable "project_id" {
+    default =  "second-stage"
+}
+
 variable "name" {
   default = "lloyds"
+}
+
+variable "service" {
+    default = ["iam.googleapis.com","compute.googleapis.com","bigquery.googleapis.com"]
 }
 
 variable "region" {
@@ -19,7 +27,7 @@ variable "myip" {
 }
 
 variable "machine_type" {
-  default = "n1-standard-1"
+  default = "e2-medium"
 }
 
 variable "instance_count" {
@@ -36,4 +44,8 @@ variable "size" {
 
 variable "subnetwork" {
   default = ""
+}
+
+variable "members" {
+    default = ["use:jane@email.com" ]
 }
