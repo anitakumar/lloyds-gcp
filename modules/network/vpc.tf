@@ -5,7 +5,7 @@ resource "google_compute_network" "this" {
 
 resource "google_compute_subnetwork" "this" {
     name = var.name
-    ip_cidr_range = "10.1.0.0/24"
+    ip_cidr_range = var.cidr_block
     network = google_compute_network.this.id
     region = var.region
     private_ip_google_access = true

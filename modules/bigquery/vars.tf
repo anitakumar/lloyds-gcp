@@ -6,9 +6,7 @@ variable "region" {
     default = "eu-west-1"
 }
 
-variable "myip" {
-    default = ""
-}
-variable "cidr_block" {
-    default = "10.1.0.0/24"
+
+variable "location" {
+    default = "eu-west1-a"
 }

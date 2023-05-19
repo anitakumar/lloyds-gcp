@@ -1,0 +1,2 @@
+https://cloud.google.com/vertex-ai/docs/tutorials/terraform/terraform-create-user-managed-notebooks-instance
+https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/notebooks_instance

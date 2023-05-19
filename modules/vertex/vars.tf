@@ -9,6 +9,11 @@ variable "region" {
 variable "myip" {
     default = ""
 }
-variable "cidr_block" {
-    default = "10.1.0.0/24"
+
+variable "machine_type" {
+    default = "e2-medium"
+}
+
+variable "members" {
+    default = ["use:jane@email.com" ]
 }
