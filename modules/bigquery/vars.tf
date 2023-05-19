@@ -10,3 +10,7 @@ variable "region" {
 variable "location" {
     default = "eu-west1-a"
 }
+
+variable "project" {
+    default = ""
+}

@@ -8,6 +8,7 @@ resource "google_bigquery_dataset" "dataset" {
   labels = {
     env = var.name
   }
+  project = var.project
 
 #   access {
 #     role          = "OWNER"

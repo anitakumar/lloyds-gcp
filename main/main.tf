@@ -34,4 +34,5 @@ module "bigquery" {
   source   = "../modules/bigquery"
   name     = var.name
   location = var.zone
+  project  = google_project.this.project_id
 }

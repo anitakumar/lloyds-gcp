@@ -1,6 +1,6 @@
 resource "google_project" "this" {
   name       = var.name
-  project_id = var.project_id
+  project_id = var.project_name
 }
 
 resource "google_project_service" "this" {

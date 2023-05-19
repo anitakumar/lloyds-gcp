@@ -1,4 +1,4 @@
-variable "project_id" {
+variable "project_name" {
   default = "second-stage"
 }
 
@@ -48,4 +48,8 @@ variable "subnetwork" {
 
 variable "members" {
   default = ["use:jane@email.com"]
+}
+
+variable "project_id" {
+  default = ""
 }
