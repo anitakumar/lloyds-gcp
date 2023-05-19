@@ -29,3 +29,9 @@ module "vertex" {
   subnetwork   = module.vpc.subnet_id
 
 }
+
+module "bigquery" {
+  source   = "../modules/bigquery"
+  name     = var.name
+  location = var.zone
+}

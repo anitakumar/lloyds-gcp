@@ -4,7 +4,7 @@ resource "google_project" "this" {
 }
 
 resource "google_project_service" "this" {
-  count = length(var.service)
+  count   = length(var.service)
   project = google_project.this.id
   service = var.service[count.index]
 

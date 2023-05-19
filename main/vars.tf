@@ -1,5 +1,5 @@
 variable "project_id" {
-    default =  "second-stage"
+  default = "second-stage"
 }
 
 variable "name" {
@@ -7,7 +7,7 @@ variable "name" {
 }
 
 variable "service" {
-    default = ["iam.googleapis.com","compute.googleapis.com","bigquery.googleapis.com"]
+  default = ["iam.googleapis.com", "compute.googleapis.com", "bigquery.googleapis.com"]
 }
 
 variable "region" {
@@ -47,5 +47,5 @@ variable "subnetwork" {
 }
 
 variable "members" {
-    default = ["use:jane@email.com" ]
+  default = ["use:jane@email.com"]
 }
