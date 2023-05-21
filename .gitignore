@@ -1,4 +1,4 @@
-my-key.json
+*.json
 main/terraform.tfstate
 main/terraform.tfstate.backup
 main/.terraform
