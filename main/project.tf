@@ -1,11 +1,11 @@
-data "google_project" "this"{
+data "google_project" "this" {
   project_id = var.project_id
 }
 
 
 data "google_service_account" "this" {
   account_id = var.account_id
-  project = var.project_id
+  project    = var.project_id
 
 }
 

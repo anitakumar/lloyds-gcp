@@ -1,7 +1,7 @@
 resource "google_compute_network" "this" {
     name =  var.name
     auto_create_subnetworks = false
-    project =  var.project
+    # project =  var.project
 }
 
 resource "google_compute_subnetwork" "this" {
@@ -10,5 +10,5 @@ resource "google_compute_subnetwork" "this" {
     network = google_compute_network.this.id
     region = var.region
     private_ip_google_access = true
-    project =  var.project
+    # project =  var.project
 }

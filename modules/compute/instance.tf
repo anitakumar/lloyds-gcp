@@ -1,10 +1,10 @@
 resource "google_compute_instance" "this" {
   count        = var.instance_count
-  name         = "${var.name}-${var.env}-count.index"
+  name         = "${var.name}-${var.env}-${count.index}"
   machine_type = var.machine_type
   zone         = var.zone
-  project = var.project
-  tags = ["Name", "${var.name}-${var.env}-count.index"]
+  # project = var.project
+  # tags = ["Name", "${var.name}"]
 
   boot_disk {
     initialize_params {

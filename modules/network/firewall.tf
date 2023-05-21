@@ -6,13 +6,9 @@ resource "google_compute_firewall" "allow-ingress" {
     }
     allow {
         protocol = "tcp"
-        ports    = ["80", "8080", "1000-2000"]
+        ports    = ["80", "8080", "1000-2000","22"]
     }
 
-    allow {
-        protocol = "ssh"
-        ports = ["22"]
-    }
 
     source_ranges = [var.myip]
 }

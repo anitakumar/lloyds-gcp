@@ -2,7 +2,7 @@ variable "project" {
   default = "lloyds-test"
 }
 variable "account_id" {
-  default ="lloyds.test.101@gmail.com"
+  default = "lloyds.test.101@gmail.com"
 }
 variable "project_id" {
   default = "lloyds-test-387318"
@@ -25,6 +25,10 @@ variable "roles" {
 }
 
 variable "region" {
+  default = "europe-west2"
+}
+
+variable "location" {
   default = "europe-west2"
 }
 
@@ -61,7 +65,7 @@ variable "subnetwork" {
 }
 
 variable "members" {
-  default = ["use:jane@email.com"]
+  default = ["use:anitakumar076@gmail.com"]
 }
 
 # variable "project_id" {

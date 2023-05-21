@@ -1,5 +1,5 @@
 resource "google_bigquery_dataset" "dataset" {
-  dataset_id                  = "${var.name}-{var.env}"
+  dataset_id                  = "${var.name}"
   friendly_name               = var.name
   description                 = "This is a test dataset"
   location                    = var.location

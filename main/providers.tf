@@ -8,9 +8,9 @@ terraform {
 }
 provider "google" {
   project = "lloyds-test-387318"
-  region  = "eu-west2"
-  zone    = "eu-west2-a"
-  credentials =  file("${path.module}/../keys.json")
+  region  = "europe-west2"
+  zone    = "europe-west2-a"
+  # credentials =  file("${path.module}/../keys.json")
 }
 
 
