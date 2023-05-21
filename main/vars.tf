@@ -1,6 +1,16 @@
-variable "project_name" {
-  default = "second-stage"
+variable "project" {
+  default = "lloyds-test"
 }
+variable "account_id" {
+  default ="lloyds.test.101@gmail.com"
+}
+variable "project_id" {
+  default = "lloyds-test-387318"
+}
+variable "env" {
+  default = "dev"
+}
+
 
 variable "name" {
   default = "lloyds"
@@ -10,12 +20,16 @@ variable "service" {
   default = ["iam.googleapis.com", "compute.googleapis.com", "bigquery.googleapis.com"]
 }
 
+variable "roles" {
+  default = ["roles/storage.buckets.create", "roles/compute.networks.create", "roles/compute.admin", "roles/bigquery.admin"]
+}
+
 variable "region" {
-  default = "eu-east-1"
+  default = "europe-west2"
 }
 
 variable "zone" {
-  default = "eu-east1-a"
+  default = "europe-west2-a"
 }
 
 
@@ -50,6 +64,6 @@ variable "members" {
   default = ["use:jane@email.com"]
 }
 
-variable "project_id" {
-  default = ""
-}
+# variable "project_id" {
+#   default = ""
+# }

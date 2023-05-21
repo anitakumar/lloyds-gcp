@@ -1,6 +1,7 @@
+# https://cloud.google.com/iam/docs/understanding-roles
 data "google_iam_policy" "admin" {
   binding {
-    role = "roles/viewer"
+    role = "roles/notebooks.admin"
     members = [
       var.members  
     ]

@@ -3,12 +3,15 @@ variable "name" {
 }
 
 variable "region" {
-    default = "eu-west-1"
+    default = "europe-west2"
 }
 
+variable "env" {
+  default = "dev"
+}
 
 variable "location" {
-    default = "eu-west1-a"
+    default = "europe-west2-a"
 }
 
 variable "project" {

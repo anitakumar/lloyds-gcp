@@ -1,12 +1,12 @@
 resource "google_bigquery_dataset" "dataset" {
-  dataset_id                  = var.name
+  dataset_id                  = "${var.name}-{var.env}"
   friendly_name               = var.name
   description                 = "This is a test dataset"
   location                    = var.location
   default_table_expiration_ms = 3600000
 
   labels = {
-    env = var.name
+    env = var.env
   }
   project = var.project
 
