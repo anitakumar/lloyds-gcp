@@ -2,3 +2,4 @@
 main/terraform.tfstate
 main/terraform.tfstate.backup
 main/.terraform
+mynotes.txt
