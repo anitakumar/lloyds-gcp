@@ -14,11 +14,23 @@
 #   policy_data = data.google_iam_policy.admin.policy_data
 # }
 
-# or
-resource "google_notebooks_instance_iam_member" "member" {
-  # project = google_notebooks_instance.instance.project
-  location = var.zone
-  instance_name = "${var.name}-vertex"
-  role = "roles/viewer"
-  member = "serviceaccount:vertex-service-account@lloyds-test-387318.iam.gserviceaccount.com"
+resource "google_notebooks_instance_iam_binding" "binding" {
+  project = google_notebooks_instance.instance.project
+  location = google_notebooks_instance.instance.location
+  instance_name = google_notebooks_instance.instance.name
+  role = "roles/notebooks.admin"
+  members = [
+    "user:anitakumar076@gmail",
+  ]
 }
+# or
+
+
+# resource "google_notebooks_instance_iam_member" "member" {
+#   project = google_notebooks_instance.instance.project
+#   provider = "google-beta"
+#   location = var.zone
+#   instance_name = google_notebooks_instance.instance.name
+#   role = "roles/notebooks.admin"
+#   member = "user:anitakumar076@gmail"
+# }

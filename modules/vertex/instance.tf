@@ -1,3 +1,4 @@
+
 resource "google_notebooks_instance" "instance" {
   name = "${var.name}-vertex"
   location = var.zone
@@ -33,6 +34,7 @@ resource "google_notebooks_instance" "instance" {
   metadata = {
     terraform = "true"
   }
+  
 }
 
 data "google_compute_network" "this" {
